@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include mia_hr *.css
+recursive-include mia_hr *.csv
+recursive-include mia_hr *.html
+recursive-include mia_hr *.ico
+recursive-include mia_hr *.js
+recursive-include mia_hr *.json
+recursive-include mia_hr *.md
+recursive-include mia_hr *.png
+recursive-include mia_hr *.py
+recursive-include mia_hr *.svg
+recursive-include mia_hr *.txt
+recursive-exclude mia_hr *.pyc
