@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DAW.####",
+ "creation": "2024-01-17 13:42:22.480109",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "section_break_ghilw",
+  "approver_1",
+  "approver_3",
+  "approver_5",
+  "column_break_fqtp1",
+  "approver_2",
+  "approver_4"
+ ],
+ "fields": [
+  {
+   "fieldname": "document",
+   "fieldtype": "Select",
+   "label": "Document",
+   "options": "\nMaterial Request\nPurchase Order\nPayment Entry"
+  },
+  {
+   "fieldname": "section_break_ghilw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approver_1",
+   "fieldtype": "Select",
+   "label": "Approver 1",
+   "options": "\nPM\nProject Admin\nStore Keeper\nManagement"
+  },
+  {
+   "fieldname": "approver_3",
+   "fieldtype": "Select",
+   "label": "Approver 3",
+   "options": "\nPM\nProject Admin\nStore Keeper\nManagement"
+  },
+  {
+   "fieldname": "approver_5",
+   "fieldtype": "Select",
+   "label": "Approver 5",
+   "options": "\nPM\nProject Admin\nStore Keeper\nManagement"
+  },
+  {
+   "fieldname": "column_break_fqtp1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approver_2",
+   "fieldtype": "Select",
+   "label": "Approver 2",
+   "options": "\nPM\nProject Admin\nStore Keeper\nManagement"
+  },
+  {
+   "fieldname": "approver_4",
+   "fieldtype": "Select",
+   "label": "Approver 4",
+   "options": "\nPM\nProject Admin\nStore Keeper\nManagement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-14 09:14:56.624505",
+ "modified_by": "Administrator",
+ "module": "MIA HR",
+ "name": "Documents Approval Workflow",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

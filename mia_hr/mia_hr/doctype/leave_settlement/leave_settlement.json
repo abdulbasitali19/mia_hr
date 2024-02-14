@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:leave_application_number",
+ "creation": "2024-02-09 14:39:32.624286",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_application_section",
+  "leave_application_number",
+  "employee_detail_section",
+  "employee_id",
+  "national_id",
+  "column_break_c24xi",
+  "employee_name",
+  "amended_from",
+  "leave_period_section",
+  "approved_leave_from",
+  "total_days",
+  "column_break_d68pp",
+  "approved_leave_to",
+  "actual_leave_period_section",
+  "actual_from",
+  "column_break_jzbls",
+  "actual_to",
+  "section_break_ifomq",
+  "salary_paid_till",
+  "pending_salary_needs_to_pay"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_application_section",
+   "fieldtype": "Section Break",
+   "label": "Leave Application"
+  },
+  {
+   "fieldname": "leave_application_number",
+   "fieldtype": "Link",
+   "label": "Leave Application Number",
+   "options": "Leave Application Document",
+   "unique": 1
+  },
+  {
+   "fieldname": "employee_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Detail"
+  },
+  {
+   "fetch_from": "leave_application_number.employee",
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID"
+  },
+  {
+   "fieldname": "column_break_c24xi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "leave_application_number.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Leave Settlement",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "leave_period_section",
+   "fieldtype": "Section Break",
+   "label": "Leave Period"
+  },
+  {
+   "fetch_from": "leave_application_number.request_from_date",
+   "fieldname": "approved_leave_from",
+   "fieldtype": "Date",
+   "label": "Approved Leave From"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Data",
+   "label": "Total Days"
+  },
+  {
+   "fieldname": "column_break_d68pp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "leave_application_number.request_to_date",
+   "fieldname": "approved_leave_to",
+   "fieldtype": "Data",
+   "label": "Approved Leave To"
+  },
+  {
+   "fieldname": "actual_leave_period_section",
+   "fieldtype": "Section Break",
+   "label": "Actual Leave Period"
+  },
+  {
+   "fieldname": "actual_from",
+   "fieldtype": "Date",
+   "label": "Actual From"
+  },
+  {
+   "fieldname": "column_break_jzbls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_to",
+   "fieldtype": "Date",
+   "label": "Actual To"
+  },
+  {
+   "fieldname": "section_break_ifomq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "salary_paid_till",
+   "fieldtype": "Date",
+   "label": "Salary Paid Till"
+  },
+  {
+   "fieldname": "pending_salary_needs_to_pay",
+   "fieldtype": "Data",
+   "label": "Pending Salary Needs to Pay"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-14 09:15:39.431895",
+ "modified_by": "Administrator",
+ "module": "MIA HR",
+ "name": "Leave Settlement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
